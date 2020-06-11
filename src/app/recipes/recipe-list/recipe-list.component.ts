@@ -8,7 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 recipes: Recipe[] = [
-  new Recipe('A test Recipe', 'This is simply a test', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2F1496939575%2Fhot-dog-nachos-XL-RECIPE2017.jpg')
+  new Recipe('A test Recipe', 'This is simply a test', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2F1496939575%2Fhot-dog-nachos-XL-RECIPE2017.jpg'),
+  new Recipe('Another test Recipe', 'This is simply a test', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2F1496939575%2Fhot-dog-nachos-XL-RECIPE2017.jpg')
 ];
   constructor() { }
 
