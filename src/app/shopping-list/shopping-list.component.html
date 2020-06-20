@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-10">
-        <app-shopping-edit></app-shopping-edit>
+        <app-shopping-edit (IngredientAdd)="NewIngredientAdded($event)"></app-shopping-edit>
         <hr>
         <ul class="list-group">
             <a class="list-group-item" style="cursor:pointer;" *ngFor="let ingredient of ingredients">
@@ -9,3 +9,9 @@
         </ul>
     </div>
 </div>
+<div class="cars" *ngFor="let car of cars">
+    <h1 *ngIf="car.id =='001'">
+        {{car.name}}
+    </h1>
+</div>
+<button class="btn btn-danger" style="margin-right: 5px;" (click)="btnalt()" type="button">Delete</button>
